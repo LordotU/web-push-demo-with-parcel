@@ -1,0 +1,28 @@
+doctype html
+
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+
+  link(rel='manifest' href='manifest.webmanifest')
+
+  title Web Push Demo
+
+body
+  #app
+
+    h1 Web Push Demo
+
+    p#error
+
+    label
+      input(id="showCheckbox" type="checkbox")
+      | Show Notifications
+
+    p
+      i Your token:
+      | &nbsp;
+      strong(id="yourToken") &mdash;
+
+  script(src='index.js')

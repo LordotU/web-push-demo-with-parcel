@@ -1,0 +1,29 @@
+{
+  "name": "web-push-demo-with-parcel",
+  "version": "1.0.0",
+  "description": "Demo application bundled with Parcel to web push handling with https://firebase.google.com/docs/cloud-messaging/js/client",
+  "keywords": [
+    "web",
+    "push",
+    "notification"
+  ],
+  "license": "MIT",
+  "author": "Oleg Levshin <levshino@gmail.com>",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "yarn build:clean && parcel build ./src/index.pug --no-source-maps",
+    "build:clean": "rm -rf ./dist >/dev/null 2>&1",
+    "deploy": "yarn build:clean && yarn build && now",
+    "dev": "parcel --port 1234 --hmr-port 5678 ./src/index.pug"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "now": "^15.3.0",
+    "parcel-bundler": "^1.12.3",
+    "pug": "^2.0.3"
+  },
+  "dependencies": {
+    "firebase": "^6.1.0"
+  }
+}
