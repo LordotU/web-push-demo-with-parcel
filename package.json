@@ -17,7 +17,7 @@
     "dev": "parcel --port 1234 --hmr-port 5678 ./src/index.pug"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
+    "@babel/core": "^7.6.4",
     "@babel/plugin-transform-runtime": "^7.4.4",
     "now": "^15.3.0",
     "parcel-bundler": "^1.12.3",
